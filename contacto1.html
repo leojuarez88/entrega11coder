@@ -24,15 +24,42 @@
       </div>
     </header>
 
-    <nav class="nav1">
-      <!-- Menu de inicio modificado en css-->
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="producto.html">Productos</a></li>
-        <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
-        <li><a href="ubicacion.html">Ubicación</a></li>
-        <li><a href="contacto1.html">Contacto</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="producto.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto1.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <section class="sectionContacto">
       <!-- <h1 class="TipoDeLetra">Contacto</h1> -->
@@ -44,19 +71,49 @@
       <form class="formularioContacto">
         <!-- Formulario de catalogo y contacto modificado en css-->
 
-        <div>
-          <input class="campo" type="text" placeholder="Ej. Leonardo" />
-
-          <input class="campo" type="text" placeholder="Ej. Juarez" />
-
-          <input
-            class="campo"
-            type="Correo electronico"
-            placeholder="Ej. leojuarez@gmail.com "
-          />
-
-          <input class="campo" type="submit" />
-        </div>
+        <form class="row g-3">
+          <div class="col-md-4">
+            <label for="validationDefault01" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="validationDefault01" value="Ej. Leonardo" required>
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefault02" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="validationDefault02" value="Ej. Juarez" required>
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefaultUsername" class="form-label">Email</label>
+            <div class="input-group">
+              <span class="input-group-text" id="inputGroupPrepend2">email</span>
+              <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault03" class="form-label">Ciudad</label>
+            <input type="text" class="form-control" id="validationDefault03" required>
+          </div>
+          <div class="col-md-3">
+            <label for="validationDefault04" class="form-label">Localidad</label>
+            <select class="form-select" id="validationDefault04" required>
+              <option selected disabled value="">Elija</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label for="validationDefault05" class="form-label">Codigo postal</label>
+            <input type="text" class="form-control" id="validationDefault05" required>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+              <label class="form-check-label" for="invalidCheck2">
+                Acepto los términos y condiciones
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </div>
+        </form>
       </form>
     </section>
 
