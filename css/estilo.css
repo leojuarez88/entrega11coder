@@ -5,10 +5,13 @@
   text-decoration-style: none;
 }
 
+/* Body */
 
 .container {
   background-color: aquamarine;
 }
+
+/* Header */
 
 header{
   background-color: darkcyan;
@@ -18,6 +21,8 @@ header{
 .navBarM {
   background-color: darkcyan !important;
 }
+
+/* Pagina de inicio */
 
 .imgInicio {  
   object-fit: cover;
@@ -29,16 +34,7 @@ header{
   margin: 25px;
 }
 
-/* FOOTER  */
-
-footer {
-    background-color: darkcyan;
-    color: white;
-}
-
-footer ul li a {
-    color: white !important;
-}
+/* Pagina de productos */
 
 .imgProductos {
   height: 300px;
@@ -48,6 +44,8 @@ footer ul li a {
   margin: 7px;
 
 }
+
+/* Pagina de contacto */
 .imgContacto{
   object-fit: cover;
   width: 500px;
@@ -55,6 +53,19 @@ footer ul li a {
 
 }
 
+/* Pagina de Formas de pago */
+
 .menuFormPago{
   background-color: darkcyan;
+}
+
+/* FOOTER  */
+
+footer {
+  background-color: darkcyan;
+  color: white;
+}
+
+footer ul li a {
+  color: white !important;
 }

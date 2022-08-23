@@ -1,153 +1,226 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ubicación</title>
+    <link rel="shortcut icon" href="Imagenes/Logo.jpg" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ubicación</title>
-  <link rel="shortcut icon" href="Imagenes/Logo.jpg" />
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/estilo.css" />
-
-</head>
-
-<body class="container">
-  <header>
-    <nav class="navbar navbar-expand-lg bg-light navBarM">
-      <div class="container-fluid" class="navbar" style="background-color: darkcyan">
-        <a class="navbar-brand" href="#" style="color: white">Light-Vel S.A.</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html" style="color: white">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="producto.html" style="color: white">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sobrenosotros.html" style="color: white">Sobre Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="formasDePago.html" style="color: white">Formas de pago</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto1.html" style="color: white">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <section>
-    <div class="m-3 p-3">
-      <h2 class="main-title">Formas de pago</h2>
-    </div>
-
-
-
-    <div class="accordion" id="accordionPanelsStayOpenExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-          <button class="accordion-button menuFormPago" type="button" data-bs-toggle="collapse"
-            data-bs-target="#panelsStayOpen-collapseOne " aria-expanded="true"
-            aria-controls="panelsStayOpen-collapseOne">
-            Mercado Pago
+  <body class="container">
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light navBarM">
+        <div
+          class="container-fluid"
+          class="navbar"
+          style="background-color: darkcyan"
+        >
+          <a class="navbar-brand" href="#" style="color: white"
+            >Light-Vel S.A.</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
           </button>
-        </h2>
-        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-          aria-labelledby="panelsStayOpen-headingOne">
-          <div class="accordion-body">
-            <strong>Aceptamos Mercado pago en 3 y 6 cuotas sin interés.</strong> It is shown by default, until the
-            collapse plugin adds the appropriate classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-            custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-            within the <code>.accordion-body</code>, though the transition does limit overflow.
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="index.html"
+                  style="color: white"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="producto.html" style="color: white"
+                  >Productos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="sobrenosotros.html"
+                  style="color: white"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="formasDePago.html"
+                  style="color: white"
+                  >Formas de pago</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto1.html" style="color: white"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <!-- Formas de pago conmenu desplegable -->
+      <div class="m-3 p-3">
+        <h2 class="main-title">Formas de pago</h2>
+      </div>
+
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button
+              class="accordion-button menuFormPago"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne "
+              aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne"
+            >
+              Mercado Pago
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="panelsStayOpen-headingOne"
+          >
+            <div class="accordion-body">
+              <strong
+                >Aceptamos Mercado pago en 3 y 6 cuotas sin interés.</strong
+              >
+              It is shown by default, until the collapse plugin adds the
+              appropriate classes that we use to style each element. These
+              classes control the overall appearance, as well as the showing and
+              hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting
+              that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit
+              overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button
+              class="accordion-button collapsed menuFormPago"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo"
+            >
+              Ahora 12
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwo"
+          >
+            <div class="accordion-body">
+              <strong
+                >Contamos con el programa ahora 12 todos los dias y en todo el
+                pais.</strong
+              >
+              It is hidden by default, until the collapse plugin adds the
+              appropriate classes that we use to style each element. These
+              classes control the overall appearance, as well as the showing and
+              hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting
+              that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit
+              overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button
+              class="accordion-button collapsed menuFormPago"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree"
+            >
+              En nuestra sucursal
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingThree"
+          >
+            <div class="accordion-body">
+              <strong
+                >Efectivo y todas las tarjetas de credito y debito.</strong
+              >
+              It is hidden by default, until the collapse plugin adds the
+              appropriate classes that we use to style each element. These
+              classes control the overall appearance, as well as the showing and
+              hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting
+              that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit
+              overflow.
+            </div>
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-          <button class="accordion-button collapsed menuFormPago" type="button" data-bs-toggle="collapse"
-            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-            aria-controls="panelsStayOpen-collapseTwo">
-            Ahora 12
-          </button>
-        </h2>
-        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-          aria-labelledby="panelsStayOpen-headingTwo">
-          <div class="accordion-body">
-            <strong>Contamos con el programa ahora 12 todos los dias y en todo el
-              pais.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use
-            to style each element. These classes control the overall appearance, as well as the showing and hiding via
-            CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also
-            worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-            does limit overflow.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-          <button class="accordion-button collapsed menuFormPago" type="button" data-bs-toggle="collapse"
-            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-            aria-controls="panelsStayOpen-collapseThree">
-            En nuestra sucursal
-          </button>
-        </h2>
-        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-          aria-labelledby="panelsStayOpen-headingThree">
-          <div class="accordion-body">
-            <strong>Efectivo y todas las tarjetas de credito y debito.</strong> It is hidden by default, until the
-            collapse plugin adds the appropriate classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-            custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-            within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
-        </div>
-      </div>
-      
-      
-      
-    </div>
+    </section>
 
-
-
-    </div>
-
-  </section>
-
-  <!-- Footer y redes sociales -->
-  <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="index.html" class="nav-link px-2">Inicio</a></li>
-      <li class="nav-item">
-        <a href="producto.html" class="nav-link px-2">Productos</a>
-      </li>
-      <li class="nav-item">
-        <a href="sobrenosotros.html" class="nav-link px-2">Sobre Nosotros</a>
-      </li>
-      <li class="nav-item">
-        <a href="formasDePago.html" class="nav-link px-2">Formas de pago</a>
-      </li>
-      <li class="nav-item">
-        <a href="contacto1.html" class="nav-link px-2">Contacto</a>
-      </li>
-    </ul>
-    <p class="text-center">
-      &copy; Derechos de autor Leonardo Juarez - Light-vel S.A. @lightvelsa
-    </p>
-  </footer>
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-</body>
-
+    <!-- Footer y redes sociales -->
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link px-2">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a href="producto.html" class="nav-link px-2">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a href="sobrenosotros.html" class="nav-link px-2">Sobre Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a href="formasDePago.html" class="nav-link px-2">Formas de pago</a>
+        </li>
+        <li class="nav-item">
+          <a href="contacto1.html" class="nav-link px-2">Contacto</a>
+        </li>
+      </ul>
+      <p class="text-center">
+        &copy; Derechos de autor Leonardo Juarez - Light-vel S.A. @lightvelsa
+      </p>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
