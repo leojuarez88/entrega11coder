@@ -22,7 +22,7 @@ header{
 .imgInicio {  
   object-fit: cover;
   width: 600px;
-  height: 400px;
+  height: 500px;
 }
 
 .parrafoInicio{
@@ -50,8 +50,8 @@ footer ul li a {
 }
 .imgContacto{
   object-fit: cover;
-  width: 600px;
-  height: 500px;
+  width: 500px;
+  height: 400px;
 
 }
 
