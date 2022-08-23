@@ -5,18 +5,56 @@
   text-decoration-style: none;
 }
 
+
 .container {
   background-color: aquamarine;
 }
 
-.navbar {
-    background-color: darkcyan;
+header{
+  background-color: darkcyan;
+  color: white !important;
 }
 
-.footer1 {
-    background-color: darkcyan;
-    font-size: color white;
+.navBarM {
+  background-color: darkcyan !important;
 }
-  
 
-  
+.imgInicio {  
+  object-fit: cover;
+  width: 600px;
+  height: 400px;
+}
+
+.parrafoInicio{
+  margin: 25px;
+}
+
+/* FOOTER  */
+
+footer {
+    background-color: darkcyan;
+    color: white;
+}
+
+footer ul li a {
+    color: white !important;
+}
+
+.imgProductos {
+  height: 300px;
+  object-fit: cover;
+}
+.imgProducto1{
+  margin: 7px;
+
+}
+.imgContacto{
+  object-fit: cover;
+  width: 600px;
+  height: 500px;
+
+}
+
+.menuFormPago{
+  background-color: darkcyan;
+}
